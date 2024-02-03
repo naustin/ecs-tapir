@@ -17,7 +17,7 @@ variable "az_count" {
 
 variable "app_image" {
   description = "Docker image to run in the ECS cluster"
-  default     = "nginx:latest"
+  default     = "public.ecr.aws/pacovk/tapir:latest"
 }
 
 variable "app_port" {
@@ -27,7 +27,7 @@ variable "app_port" {
 
 variable "app_count" {
   description = "Number of docker containers to run"
-  default     = 3
+  default     = 2
 }
 
 variable "health_check_path" {
