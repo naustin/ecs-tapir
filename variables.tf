@@ -2,7 +2,7 @@
 
 variable "aws_region" {
   description = "The AWS region things are created in"
-  default     = "us-west-2"
+  default     = "us-gov-west-1"
 }
 
 variable "ecs_task_execution_role_name" {
@@ -12,7 +12,7 @@ variable "ecs_task_execution_role_name" {
 
 variable "az_count" {
   description = "Number of AZs to cover in a given region"
-  default     = "2"
+  default     = "1"
 }
 
 variable "app_image" {
@@ -42,4 +42,9 @@ variable "fargate_cpu" {
 variable "fargate_memory" {
   description = "Fargate instance memory to provision (in MiB)"
   default     = "2048"
+}
+
+variable "vpc_id" {
+  description = "ID of existing VPC"
+  default = ""
 }
