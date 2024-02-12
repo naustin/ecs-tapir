@@ -42,5 +42,5 @@ variable "fargate_memory" {
 
 variable "vpc_id" {
   description = "ID of existing VPC"
-  default = ""
+  default = "vpc-0b6e4626452408825"
 }
